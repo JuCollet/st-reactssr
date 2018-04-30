@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -86,14 +86,16 @@ module.exports = require("styled-jsx/style");
 /* 2 */,
 /* 3 */,
 /* 4 */,
-/* 5 */
+/* 5 */,
+/* 6 */,
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(6);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -103,7 +105,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_document__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_document__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_document___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_document__);
 
 
@@ -140,7 +142,20 @@ function (_Document) {
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("html", {
         lang: "fr"
-      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_document__["Head"], null, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("link", {
+      }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_document__["Head"], null, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+        charSet: "utf-8",
+        className: "jsx-1983603850"
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1.0",
+        className: "jsx-1983603850"
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+        name: "Description",
+        content: "React Server Side Rendering dummy app.",
+        className: "jsx-1983603850"
+      }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("title", {
+        className: "jsx-1983603850"
+      }, "Supertime - React Server Side Rendering dummy app"), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("link", {
         href: "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css",
         rel: "stylesheet",
         className: "jsx-1983603850"
@@ -165,7 +180,7 @@ function (_Document) {
 
 
 /***/ }),
-/* 7 */
+/* 9 */
 /***/ (function(module, exports) {
 
 module.exports = require("next/document");

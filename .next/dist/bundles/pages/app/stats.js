@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 12);
+/******/ 	return __webpack_require__(__webpack_require__.s = 16);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -101,33 +101,18 @@ module.exports = require("next/router");
 module.exports = require("prop-types");
 
 /***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(13);
-
-
-/***/ }),
-/* 13 */
+/* 5 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-
-// EXTERNAL MODULE: external "react"
-var external__react_ = __webpack_require__(0);
-var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
 
 // EXTERNAL MODULE: external "styled-jsx/style"
 var style_ = __webpack_require__(1);
 var style__default = /*#__PURE__*/__webpack_require__.n(style_);
+
+// EXTERNAL MODULE: external "react"
+var external__react_ = __webpack_require__(0);
+var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
 
 // EXTERNAL MODULE: external "next/link"
 var link_ = __webpack_require__(2);
@@ -231,15 +216,123 @@ var AppLayout_AppLayout = function AppLayout(props) {
   }));
 };
 
-/* harmony default export */ var components_AppLayout_AppLayout = (AppLayout_AppLayout);
+/* harmony default export */ var components_AppLayout_AppLayout = __webpack_exports__["a"] = (AppLayout_AppLayout);
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-chartjs");
+
+/***/ }),
+/* 7 */,
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(17);
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+
+// EXTERNAL MODULE: external "react"
+var external__react_ = __webpack_require__(0);
+var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
+
+// EXTERNAL MODULE: ./components/AppLayout/AppLayout.jsx + 2 modules
+var AppLayout = __webpack_require__(5);
+
 // EXTERNAL MODULE: external "react-chartjs"
-var external__react_chartjs_ = __webpack_require__(14);
+var external__react_chartjs_ = __webpack_require__(6);
 var external__react_chartjs__default = /*#__PURE__*/__webpack_require__.n(external__react_chartjs_);
 
+// CONCATENATED MODULE: ./components/Cards/YearlyEvolution/YearlyEvolution.jsx
+
+
+var data = {
+  labels: [2015, 2016, 2017, 2018],
+  datasets: [{
+    label: '2017',
+    fillColor: 'rgba(86,204,242,1)',
+    strokeColor: 'rgba(86,204,242,1)',
+    highlightFill: 'rgba(86,204,242,1)',
+    highlightStroke: 'rgba(86,204,242,1)',
+    data: [6500, 5900, 8000, 9100]
+  }]
+};
+
+var YearlyEvolution_YearlyEvolution = function YearlyEvolution() {
+  return external__react__default.a.createElement("div", {
+    className: "card card-md"
+  }, external__react__default.a.createElement("span", {
+    className: "card-title"
+  }, "Evolutions annuelles"), external__react__default.a.createElement(external__react_chartjs_["Bar"], {
+    data: data,
+    height: "200",
+    width: "300"
+  }), external__react__default.a.createElement("span", {
+    className: "card-link"
+  }, "Tableau d\xE9taill\xE9"));
+};
+
+/* harmony default export */ var Cards_YearlyEvolution_YearlyEvolution = (YearlyEvolution_YearlyEvolution);
+// CONCATENATED MODULE: ./components/Cards/MonthlyRevenues/MonthlyRevenues.jsx
+
+
+var MonthlyRevenues_data = {
+  labels: ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL'],
+  datasets: [{
+    label: '2017',
+    fillColor: 'rgba(86,204,242,0.2)',
+    strokeColor: 'rgba(86,204,242,1)',
+    pointColor: 'rgba(86,204,242,1)',
+    pointStrokeColor: '#fff',
+    pointHighlightFill: '#fff',
+    pointHighlightStroke: 'rgba(86,204,242,1)',
+    data: [650, 590, 800, 810, 560, 550, 400]
+  }, {
+    label: '2018',
+    fillColor: 'rgba(84,98,117,0.2)',
+    strokeColor: 'rgba(84,98,117,1)',
+    pointColor: 'rgba(84,98,117,1)',
+    pointStrokeColor: '#fff',
+    pointHighlightFill: '#fff',
+    pointHighlightStroke: 'rgba(84,98,117,1)',
+    data: [280, 480, 400, 190, 860, 270, 900]
+  }]
+};
+
+var MonthlyRevenues_MonthlyRevenuesCard = function MonthlyRevenuesCard() {
+  return external__react__default.a.createElement("div", {
+    className: "card card-lg"
+  }, external__react__default.a.createElement("span", {
+    className: "card-title"
+  }, "Revenus mensuels"), external__react__default.a.createElement(external__react_chartjs_["Line"], {
+    data: MonthlyRevenues_data,
+    width: "400",
+    height: "175"
+  }), external__react__default.a.createElement("span", {
+    className: "card-link"
+  }, "Tableau d\xE9taill\xE9"));
+};
+
+/* harmony default export */ var MonthlyRevenues = (MonthlyRevenues_MonthlyRevenuesCard);
 // CONCATENATED MODULE: ./components/Cards/YearlyExpenses/YearlyExpenses.jsx
 
 
-var data = [{
+var YearlyExpenses_data = [{
   value: 300,
   color: '#56ccf2',
   highlight: '#74d3f2',
@@ -262,7 +355,7 @@ var YearlyExpenses_YearlyExpenses = function YearlyExpenses() {
   }, external__react__default.a.createElement("span", {
     className: "card-title"
   }, "D\xE9penses annuelles"), external__react__default.a.createElement(external__react_chartjs_["Doughnut"], {
-    data: data,
+    data: YearlyExpenses_data,
     height: "175",
     width: "200"
   }), external__react__default.a.createElement("span", {
@@ -271,24 +364,129 @@ var YearlyExpenses_YearlyExpenses = function YearlyExpenses() {
 };
 
 /* harmony default export */ var Cards_YearlyExpenses_YearlyExpenses = (YearlyExpenses_YearlyExpenses);
+// EXTERNAL MODULE: external "styled-jsx/style"
+var style_ = __webpack_require__(1);
+var style__default = /*#__PURE__*/__webpack_require__.n(style_);
+
+// EXTERNAL MODULE: external "axios"
+var external__axios_ = __webpack_require__(18);
+var external__axios__default = /*#__PURE__*/__webpack_require__.n(external__axios_);
+
+// CONCATENATED MODULE: ./components/Cards/ExpensesList/ExpensesList.jsx
+
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var ExpensesList_ExpensesList =
+/*#__PURE__*/
+function (_PureComponent) {
+  _inherits(ExpensesList, _PureComponent);
+
+  function ExpensesList(props) {
+    var _this;
+
+    _classCallCheck(this, ExpensesList);
+
+    _this = _possibleConstructorReturn(this, (ExpensesList.__proto__ || Object.getPrototypeOf(ExpensesList)).call(this, props));
+    _this.state = {
+      expensesList: []
+    };
+    return _this;
+  }
+
+  _createClass(ExpensesList, [{
+    key: "componentWillMount",
+    value: function componentWillMount() {
+      var _this2 = this;
+
+      external__axios__default.a.get('https://jsonplaceholder.typicode.com/todos').then(function (res) {
+        _this2.setState({
+          expensesList: res.data
+        });
+      });
+    }
+  }, {
+    key: "renderExpensesList",
+    value: function renderExpensesList() {
+      function randomPrice() {
+        var max = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1000;
+        return Math.round((Math.random() * max + 1) * 100) / 100;
+      }
+
+      if (this.state.expensesList.length === 0) return null;
+      return this.state.expensesList.map(function (el, i) {
+        return external__react__default.a.createElement("li", {
+          key: el.id,
+          className: "expenseslist-el ".concat(i % 2 === 0 ? 'expenseslist-el-odd' : '')
+        }, external__react__default.a.createElement("span", {
+          className: "expenseslist-el-userId"
+        }, el.userId, "x"), external__react__default.a.createElement("span", {
+          className: "expenseslist-el-description"
+        }, el.title), external__react__default.a.createElement("span", {
+          className: "expenseslist-el-price"
+        }, "".concat(randomPrice(), "\u20AC")));
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return external__react__default.a.createElement("div", {
+        className: "jsx-3614630842" + " " + "card card-lg"
+      }, external__react__default.a.createElement("span", {
+        className: "jsx-3614630842" + " " + "card-title"
+      }, "Liste des d\xE9penses"), external__react__default.a.createElement("div", {
+        className: "jsx-3614630842" + " " + "expenseslist-wrapper"
+      }, external__react__default.a.createElement("ul", {
+        className: "jsx-3614630842" + " " + "expenseslist"
+      }, this.renderExpensesList())), external__react__default.a.createElement("span", {
+        className: "jsx-3614630842" + " " + "card-link"
+      }, "Tableau d\xE9taill\xE9"), external__react__default.a.createElement(style__default.a, {
+        styleId: "3614630842",
+        css: [".expenseslist-wrapper{position:absolute;padding-right:17px;left:0px;right:0px;top:60px;bottom:45px;width:calc(100% + 17px);overflow-y:scroll;}", ".expenseslist{padding:0;margin:0;list-style:none;font-family:Roboto,sans-serif;color:#546275;}", ".expenseslist-el{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:10px 5px 10px 25px;background-color:#FEFEFE;}", ".expenseslist-el-odd{background-color:#F2F2F2;}", ".expenseslist-el-userId{display:inline-block;width:5%;margin-right:5%;}", ".expenseslist-el-description{display:inline-block;width:65%;margin-right:5%;}", ".expenseslist-el-price{display:inline-block;width:20%;font-weight:bold;}"]
+      }));
+    }
+  }]);
+
+  return ExpensesList;
+}(external__react_["PureComponent"]);
+
+/* harmony default export */ var Cards_ExpensesList_ExpensesList = (ExpensesList_ExpensesList);
 // CONCATENATED MODULE: ./pages/app/stats.jsx
 
 
 
 
+
+
+
 var stats_stats = function stats() {
-  return external__react__default.a.createElement(components_AppLayout_AppLayout, null, external__react__default.a.createElement("span", {
+  return external__react__default.a.createElement(AppLayout["a" /* default */], null, external__react__default.a.createElement("span", {
     className: "app-content-title"
-  }, "Statistiques"), external__react__default.a.createElement(Cards_YearlyExpenses_YearlyExpenses, null));
+  }, "Statistiques"), external__react__default.a.createElement(MonthlyRevenues, null), external__react__default.a.createElement(Cards_YearlyEvolution_YearlyEvolution, null), external__react__default.a.createElement(Cards_YearlyExpenses_YearlyExpenses, null), external__react__default.a.createElement(Cards_ExpensesList_ExpensesList, null));
 };
 
 /* harmony default export */ var app_stats = __webpack_exports__["default"] = (stats_stats);
 
 /***/ }),
-/* 14 */
+/* 18 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-chartjs");
+module.exports = require("axios");
 
 /***/ })
 /******/ ]);
